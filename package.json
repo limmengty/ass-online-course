@@ -1,0 +1,23 @@
+{
+  "name": "ass-online-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limmengty/ass-online-course.git"
+  },
+  "author": "mengty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limmengty/ass-online-course/issues"
+  },
+  "homepage": "https://github.com/limmengty/ass-online-course#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
