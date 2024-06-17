@@ -5,7 +5,7 @@ const event_data = [
     image: "../../images/about.jpg",
     description: "AWS Academy",
     title: "AWS Cloud Foundations",
-    link: "#",
+    link: "../errorPage/notfound.html",
   },
 ];
 

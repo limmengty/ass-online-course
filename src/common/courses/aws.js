@@ -10,7 +10,7 @@ const aws_data = [
     method: "Physical",
     start_Date: "2023/01/23",
     duration: "45hrs (Weekend 2pm - 5pm and Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "AWS Cloud Security Foundations",
@@ -21,7 +21,7 @@ const aws_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "AWS Cloud Operation",
@@ -32,7 +32,7 @@ const aws_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "60hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "AWS Academy Cloud Architecting",
@@ -43,7 +43,7 @@ const aws_data = [
     method: "Physical",
     start_Date: "2023/01/23",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
 
 ];

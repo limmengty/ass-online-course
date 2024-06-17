@@ -49,7 +49,14 @@ module.exports = {
           light: "#a3cef1",
         },
       },
+      padding: {
+        p17: ["17.4px"],
+      },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("tailwind-scrollbar"),
+  ],
 };

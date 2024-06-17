@@ -4,7 +4,7 @@ const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
 
 let currentIndex = 0;
-const autoSlideInterval = 5000; // Auto-slide interval in milliseconds
+const autoSlideInterval = 3000; // Auto-slide interval in milliseconds
 
 function updateCarousel() {
   carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;

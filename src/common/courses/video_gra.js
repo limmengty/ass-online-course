@@ -10,7 +10,7 @@ const video_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: " 1 year (Weekend 8am -12pm and 2pm - 5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Adobe illustrator Beginner & Intermediate",
@@ -21,7 +21,7 @@ const video_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: " 35hrs (Weekend 8am - 12pm and 2pm - 5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Adobe Photoshop Beginner & Advanced",
@@ -32,7 +32,7 @@ const video_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: " 35hrs (Weekend 8am - 12pm and 2pm - 5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Adobe After Effect Beginner & Intermediate & Advanced",
@@ -43,7 +43,7 @@ const video_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Mon-Fri 6pm - 8pm and 2pm - 5pm",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Cinema 4D Beginner & Advanced",
@@ -54,7 +54,7 @@ const video_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (2pm - 5pm and Mon-Fri 6pm-8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "2D Cartoon Animation",
@@ -65,7 +65,7 @@ const video_data = [
     method: "Online",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 6pm - 8pm and 2pm - 5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
 
 

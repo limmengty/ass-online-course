@@ -10,7 +10,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "20hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Identify with Windows Server 2016 (MS 20742B) Level 1",
@@ -21,7 +21,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Networking with Windows Server 2016 (MS 20741B) Level 2",
@@ -32,7 +32,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Installation, Storage, and the Computer with Window Server 2016 (MS 20740C) Level 3",
@@ -43,7 +43,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Weekend 2pm - 5pm and Mon/Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "RedHat Linux L1",
@@ -54,7 +54,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon/Fri 6pm - 8pm​​​​​)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },  
   {
     title: "RedHat Linux L2",
@@ -65,7 +65,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon/Fri 6pm - 8pm​​​​​)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Oracle Database 19c: SQL Fundamental",
@@ -76,7 +76,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "50hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Oracle Database 19c_Administration Workshop I",
@@ -87,7 +87,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "50hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Oracle Database 19c – Administration Workshop II",
@@ -98,7 +98,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "50hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },  
   {
     title: "VMware vSphere: Install, Configure, Manage",
@@ -109,7 +109,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "42hrs ( Weekend 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Microsoft Azure fundamental AZ-900T00-A (Level 1)",
@@ -120,7 +120,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "24hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },  
   {
     title: "Developing Solution of Microsoft Azure AZ-204T00-A (Level 2)",
@@ -131,7 +131,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Microsoft Identify and Access Administrator, SC-300T00 (Level 3)",
@@ -142,7 +142,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Weekend 2pm - 5pm and Mon/Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Office 365",
@@ -153,7 +153,7 @@ const sa_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Weekend 2pm - 5pm and Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
 
 

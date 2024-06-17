@@ -10,7 +10,7 @@ const cybersecurity_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "THE CERTIFIED NETWORK DEFENDER V2",
@@ -21,7 +21,7 @@ const cybersecurity_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
 ];
 

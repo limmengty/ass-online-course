@@ -1,8 +1,6 @@
 window.addEventListener("scroll", function () {
   const popup = document.querySelector(".popup");
   const scrollPosition = window.scrollY;
-  console.log("JO");
-
   if (scrollPosition > 500) {
     popup.classList.add("opacity-100");
   } else {

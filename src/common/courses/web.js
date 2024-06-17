@@ -10,7 +10,7 @@ const web_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "60hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "International Web Developer",
@@ -21,7 +21,7 @@ const web_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "1 year (Mon-Fri 6pm - 8pm and Sat-Sun 8am - 12pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Front End",
@@ -32,7 +32,7 @@ const web_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23",
     duration: "45hrs (Weekend 2pm - 5pm and Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Back End I",
@@ -43,7 +43,7 @@ const web_data = [
     method: "Online, Physical",
     start_Date: "2023/01/28",
     duration: "70hrs (Weekend 2pm - 5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Back End II",
@@ -54,7 +54,7 @@ const web_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23",
     duration: "70hrs (Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Back End + Front End",
@@ -65,7 +65,7 @@ const web_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23",
     duration: "70hrs (Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
 
 ];

@@ -10,7 +10,7 @@ const header_data = [
     allCourse: {
       name: "All Course",
       links: {
-        home: "../homepage/index.html",
+        home: "../courses/allcourse.html",
         ciscoAcademy: "../courses/cisco.html",
         awsAcademy: "../courses/aws.html",
         comptiaAcademy: "../courses/comp_tia.html",
@@ -49,7 +49,7 @@ const header_data = [
     },
     registration: {
       name: "Registration",
-      link: "#",
+      link: "../registration/registration.html",
     },
     aboutUs: {
       name: "About Us",

@@ -10,7 +10,7 @@ const special_course_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Weekend 2pm - 5pm and Mon/Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Mikrotik MTCNA",
@@ -21,7 +21,7 @@ const special_course_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Weekend 2pm - 5pm and Mon/Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Penetration Testing Level 1",
@@ -32,7 +32,7 @@ const special_course_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Penetration Testing Level 2",
@@ -43,7 +43,7 @@ const special_course_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 8am-12pm or 2pm-5pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "ITIL 4 Foundation",
@@ -54,7 +54,7 @@ const special_course_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "30hrs (Weekend 2pm - 5pm or 8am - 12pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "iOS Mobile Developer Specialized (Fundamental until Advanced)",
@@ -65,7 +65,7 @@ const special_course_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
   {
     title: "Android Mobile Developer ( Fundamental until Advanced )",
@@ -76,7 +76,7 @@ const special_course_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 6pm - 8pm)",
-    link: "#"
+    link: "../errorPage/notfound.html"
   },
 
 

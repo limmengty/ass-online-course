@@ -2,7 +2,7 @@ function displayItems(items) {
   let allData = items.map(function (item) {
     console.log(item);
     return `
-            <div class="px-2" >
+            <div class="" >
                 <div class="bg-blue-light p-5 flex justify-between flex-col items-start mt-0 rounded-md">
                     <div class="prose">
                             <h2>${item.title}</h2>
@@ -91,7 +91,7 @@ function displayPopUp(popups) {
             </div>
     `;
   });
-  allData = allData.join("");
+//   allData = allData.join("");
   document.querySelector(".popups").innerHTML = allData;
 }
 
@@ -137,7 +137,7 @@ function displayHeader(headers) {
                                     class="list lg:relative ">
                                     <div class=" inline-flex items-center overflow-hidden rounded-md ">
                                         <a class="group-hover:bg-gray-500 group-hover:text-gray-50 text-gray-500 transition hover:text-blue-light"
-                                            href="../courses/cisco.html"
+                                            href="${header.allCourse.links.home}"
                                             > 
                                             ${header.allCourse.name}
                                         </a>
@@ -323,8 +323,9 @@ function displayHeader(headers) {
 
 function displayFooter(footers) {
   let allData = footers.map(function (footer) {
+    const date = new Date().getFullYear();
     return `
-            <div class="w-full bg-yellow-400">
+            <div class="w-full h-full top-0">
                 <div class="relative w-full h-52 md:h-72 bg-blue-400">
                     <iframe class="absolute top-0 left-0 w-full h-full"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.488327362724!2d104.92760177553728!3d11.588492543689394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310953fd9f9a51e9%3A0xc26eafcd2ed5ca29!2z4Z6f4Z624Z6A4Z6b4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6b4Z-Q4Z6ZIOGek-GfkOGemuGej-Geu-Gekw!5e0!3m2!1skm!2skh!4v1717928601020!5m2!1skm!2skh"
@@ -570,8 +571,8 @@ function displayFooter(footers) {
                         </div>
                     </div>
                 </div>
-                <div class="bg-white h-10 text-center flex items-center justify-center py-5 md:py-10">
-                    <p class="text-blue-dark font-bold text-xs md:text-base">© Copyright 2023 Name, All Rights Reserved.
+                <div class="bg-white h-10 text-center flex items-center justify-center py-8 md:py-10">
+                    <p class="text-blue-dark font-bold text-xs md:text-base">© Copyright ${date} AMTechnology Institute, All Rights Reserved.
                     </p>
                 </div>
             </div>
@@ -580,4 +581,32 @@ function displayFooter(footers) {
   allData = allData.join("");
   document.querySelector(".footers").innerHTML = allData;
 }
-export { displayItems, displayEvent, displayHeader, displayFooter, displayPopUp };
+
+function displayCourse(courses) {
+    let allData = courses.map(function (course) {
+      return `<div class="group cursor-pointer rounded-lg bg-gray-200 border-blue-light border-2 md:border-4 pb-2 overflow-hidden">
+                  <img alt="" 
+                  src="../images/${course.image} " 
+                  class="h-52 transition  duration-500 group-hover:scale-105  w-full object-cover sm:h-40 lg:h-60" />
+                  <div class="p-5">
+                      <div class="prose prose-h1:text-xs prose-h3:text-black">
+                          <h3 class="">
+                              ${course.department}
+                          </h3>
+                      </div>
+      
+                      <button class="md:mt-5 mt-2">
+                          <a href="${course.link}"
+                              class="z-50 hover:bg-blue-light bg-transparent transition-all ease-in-out duration-200 inline-block rounded border border-blue-light md:px-8 md:py-2 px-6 py-2 md:text-base text-blue-dark hover:text-white focus:outline-none focus:ring active:text-blue-dark">
+                              Read More
+                          </a>
+                      </button>
+                  </div>
+              </div>
+                `;
+    });
+    allData = allData.join("");
+    document.querySelector(".events").innerHTML = allData;
+  }
+
+  export { displayItems, displayEvent, displayHeader, displayFooter, displayPopUp, displayCourse };
