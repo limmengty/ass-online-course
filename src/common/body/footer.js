@@ -2,6 +2,7 @@ import { displayFooter } from "../index.js";
 
 const footer_data = [
   {
+
     address: {
       location: "National Road 6A, Sangkat Prek Leap, Khan Chroy Changva, Phnom Penh ",
       iconFacebook: "../../images/facebook.png",
@@ -67,6 +68,7 @@ const footer_data = [
         contactUs: "../contacts/contact_us.html",
       },
     },
+    copyright: "AMTechnology Institute, All Rights Reserved.",
   },
 ];
 

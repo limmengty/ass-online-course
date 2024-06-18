@@ -42,9 +42,9 @@ const header_data = [
         home: "../other_courses/special_course.html",
         cybersecurity: "../other_courses/cybersecurity.html",
         mobileDev: "../other_courses/moblie_dev.html",
-        projectMan: "#",
+        projectMan: "../errorPage/notfound.html",
         webDev: "#",
-        leadership: "#",
+        leadership: "../errorPage/notfound.html",
       },
     },
     registration: {
@@ -57,9 +57,9 @@ const header_data = [
       ourPartner: "Our Partner",
       contactUs: "Contact Us",
       links: {
-        home: "#",
+        home: "../ours/our_facilites.html",
         ourFacilities: "../ours/our_facilites.html",
-        ourPartner: "#",
+        ourPartner: "../errorPage/notfound.html",
         contactUs: "../contacts/contact_us.html"
       },
     },

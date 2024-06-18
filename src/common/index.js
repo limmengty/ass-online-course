@@ -86,8 +86,8 @@ function displayPopUp(popups) {
     return `    
             <div
                 onclick="pushToUp()"
-                class="popup fixed cursor-pointer bottom-10 right-3 animate-bounce opacity-0">
-                <i class="fa-solid fa-arrow-up text-3xl font-bold text-blue-light"></i>
+                class="popup w-8 h-8  rounded-full fixed cursor-pointer bottom-10 right-3 animate-bounce opacity-0">
+                <i class="inline-block fa-solid w-8 h-8 p-2 fa-arrow-up text-md text-center rounded-full font-bold text-white bg-blue-500 "></i>
             </div>
     `;
   });
@@ -99,7 +99,7 @@ function displayHeader(headers) {
   let allData = headers.map(function (header) {
     return `
                 <div class="mx-auto max-w-screen-full container px-2 sm:px-2 lg:px-2 ">
-                <div class="flex h-16 items-center justify-between">
+                <div class="flex w-full h-16 items-center flex-row justify-between">
                     <div class="md:flex md:items-center md:gap-12">
                         <a class="block text-white font-bold" 
                         href="${header.home.link}">
@@ -107,7 +107,7 @@ function displayHeader(headers) {
                             ${header.logoImage}
                         </a>
                     </div>
-                    <div class="">
+                    <div class="flex flex-row justify-between items-center">
                         <ul
                             class="lg:opacity-100 opacity-0 flex lg:items-center lg:flex-row flex-col justify-center items-center gap-12 lg:gap-6 xl:gap-6 text-xl lg:text-sm xl:text-base text-white px-10  bg-blue-dark absolute lg:static lg:h-auto w-full h-screen left-0 top-[-400px] transition-all ease-in duration-1000 ">
                             <!-- home -->
@@ -231,11 +231,6 @@ function displayHeader(headers) {
                                                 ${header.specialCourse.projectMan}
                                             </a>
                                             <a 
-                                            href="${header.specialCourse.links.webDev}" 
-                                            class="dropdown-hover" role="menuitem">
-                                            ${header.specialCourse.webDev}
-                                                </a>
-                                            <a 
                                             href="${header.specialCourse.links.leadership}" 
                                             class="dropdown-hover" role="menuitem">
                                                 ${header.specialCourse.leadership}
@@ -303,13 +298,21 @@ function displayHeader(headers) {
                                 </div>
                             </li>
                         </ul>
+
+
                     </div>
                     <!-- menu action -->
-                    <div class="flex items-center gap-4 text-base font-poppins">
+                    <div class="flex items-center gap-3 mt-2 flex-row justify-center text-base font-poppins">
+                        <div class="block menu_bar text-base font-poppins mt-2">
+                            <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
+                                <ion-icon name="search" onclick="Search()"
+                                    class="text-xl text-white cursor-pointer icon transition-all duration-150 ease-linear "></ion-icon>
+                            </button>
+                        </div>
                         <div class="block lg:hidden menu_bar text-base font-poppins">
-                            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                            <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
                                 <ion-icon name="menu" onclick="Menu(this)"
-                                    class="text-[2rem] text-white cursor-pointer icon transition-all duration-150 ease-linear "></ion-icon>
+                                    class="text-xl text-white cursor-pointer icon transition-all duration-150 ease-linear "></ion-icon>
                             </button>
                         </div>
                     </div>
@@ -572,7 +575,7 @@ function displayFooter(footers) {
                     </div>
                 </div>
                 <div class="bg-white h-10 text-center flex items-center justify-center py-8 md:py-10">
-                    <p class="text-blue-dark font-bold text-xs md:text-base">© Copyright ${date} AMTechnology Institute, All Rights Reserved.
+                    <p class="text-blue-dark font-bold text-xs md:text-base">© Copyright ${date} ${footer.copyright}
                     </p>
                 </div>
             </div>
