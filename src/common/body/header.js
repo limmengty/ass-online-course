@@ -2,7 +2,7 @@ import { displayHeader } from "../index.js";
 
 const header_data = [
   {
-    logoImage: "Logo",
+    logoImage: "AM",
     home: {
       name: "Home",
       link: "../homepage/index.html",
@@ -60,12 +60,12 @@ const header_data = [
         home: "../ours/our_facilites.html",
         ourFacilities: "../ours/our_facilites.html",
         ourPartner: "../errorPage/notfound.html",
-        contactUs: "../contacts/contact_us.html"
+        contactUs: "../contacts/contact_us.html",
       },
     },
     events: {
       name: "New Event",
-      link: "../events/new_event.html"
+      link: "../events/new_event.html",
     },
   },
 ];

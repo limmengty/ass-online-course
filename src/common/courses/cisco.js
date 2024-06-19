@@ -10,7 +10,7 @@ const cisco_data = [
     method: "Physical",
     start_Date: "2023/01/23",
     duration: "45hrs (Weekend 2pm - 5pm and Mon-Fri 6pm - 8pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
     title: "International Networking Engineer and Cyber Security (V7.0)",
@@ -21,7 +21,7 @@ const cisco_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "1 year (Weekend 8am -12pm and 6pm - 8pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
     title: "IT Essential V7.0",
@@ -32,7 +32,7 @@ const cisco_data = [
     method: "Physical",
     start_Date: "2023/01/23",
     duration: " 70hrs (Weekend 8am - 12pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
     title: "CCNA1 V7.0 : Introduction to Networks (ITN)",
@@ -43,7 +43,7 @@ const cisco_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Mon-Fri 6pm - 8pm )",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
     title: "CCNA2 V7.0: Switching, Routing and Wireless Essentials (SRWE)",
@@ -54,10 +54,11 @@ const cisco_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Sat-Sun 8am-12pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
-    title: "CCNA 3 V7.0: Enterprise Networking, Security, and Automation (ENSA)",
+    title:
+      "CCNA 3 V7.0: Enterprise Networking, Security, and Automation (ENSA)",
     department: "Cisco Academy",
     campus: "AMTechnology Institute",
     level: "Intermediate",
@@ -65,7 +66,7 @@ const cisco_data = [
     method: "Online, Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "70hrs (Weekend 2pm - 5pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
     title: "CCNA Cyber Security Essential",
@@ -76,12 +77,10 @@ const cisco_data = [
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
     duration: "50hrs (Mon-Fri 6pm-8pm), 50hrs (Weekend 8am - 12pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
-
-
 ];
 
 window.addEventListener("DOMContentLoaded", function () {
-  displayItems(cisco_data);;
+  displayItems(cisco_data);
 });

@@ -2,16 +2,16 @@ import { displayFooter } from "../index.js";
 
 const footer_data = [
   {
-
     address: {
-      location: "National Road 6A, Sangkat Prek Leap, Khan Chroy Changva, Phnom Penh ",
+      location:
+        "National Road 6A, Sangkat Prek Leap, Khan Chroy Changva, Phnom Penh ",
       iconFacebook: "../../images/facebook.png",
       iconTelegram: "../../images/telegram.png",
       links: {
         linkLocation: "#",
         linkFacebook: "#",
         linkTelegram: "#",
-      }
+      },
     },
     link: "#",
     allCourse: {
@@ -43,15 +43,13 @@ const footer_data = [
       cybersecurity: "Cybersecurity",
       mobileDev: "Mobile Developer",
       projectMan: "Project Management",
-      webDev: "Web Development Academy",
       leadership: "Leadership",
       links: {
         home: "../other_courses/special_course.html",
         cybersecurity: "../other_courses/cybersecurity.html",
         mobileDev: "../other_courses/moblie_dev.html",
-        projectMan: "#",
-        webDev: "#",
-        leadership: "#",
+        projectMan: "../errorPage/notfound.html",
+        leadership: "../errorPage/notfound.html",
       },
     },
     registrationLink: {
@@ -61,7 +59,7 @@ const footer_data = [
       ourFacilities: "Our Facilities",
       contactUs: "Contact Us",
       links: {
-        home: "#",
+        home: "../registration/registration.html",
         fromRegistration: "#",
         event: "../events/new_event.html",
         ourFacilities: "../ours/our_facilites.html",

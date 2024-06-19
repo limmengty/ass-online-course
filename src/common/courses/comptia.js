@@ -9,8 +9,9 @@ const comptia_data = [
     credit: "3.000",
     method: "Physical",
     start_Date: "2023/01/28",
-    duration: " 70hrs (2pm - 5pm and Mon-Fri 6pm-8pm), 70hrs (Weekend 2pm - 5pm and Mon-Fri 6pm - 8pm)",
-    link: "../errorPage/notfound.html"
+    duration:
+      " 70hrs (2pm - 5pm and Mon-Fri 6pm-8pm), 70hrs (Weekend 2pm - 5pm and Mon-Fri 6pm - 8pm)",
+    link: "../errorPage/notfound.html",
   },
   {
     title: "CompTIA Core",
@@ -20,8 +21,9 @@ const comptia_data = [
     credit: "3.000",
     method: "Physical",
     start_Date: "2023/01/28",
-    duration: "70hrs (Mon-Fri 2pm-5pm or 6pm-8pm), 70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 2pm - 5pm or 6pm - 8pm)",
-    link: "../errorPage/notfound.html"
+    duration:
+      "70hrs (Mon-Fri 2pm-5pm or 6pm-8pm), 70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 2pm - 5pm or 6pm - 8pm)",
+    link: "../errorPage/notfound.html",
   },
   {
     title: "CompTIA NETWORK+",
@@ -32,7 +34,7 @@ const comptia_data = [
     method: "Physical",
     start_Date: "2023/01/28",
     duration: " 70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 6pm - 8pm)",
-    link: "../errorPage/notfound.html"
+    link: "../errorPage/notfound.html",
   },
   {
     title: "CompTIA SECURITY+",
@@ -42,13 +44,12 @@ const comptia_data = [
     credit: "3.000",
     method: "Physical",
     start_Date: "2023/01/28",
-    duration: "70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 2pm - 5pm or 6pm - 8pm)",
-    link: "../errorPage/notfound.html"
+    duration:
+      "70hrs (Weekend 2pm - 5pm or 8am - 12pm and Mon-Fri 2pm - 5pm or 6pm - 8pm)",
+    link: "../errorPage/notfound.html",
   },
-
-
 ];
 
 window.addEventListener("DOMContentLoaded", function () {
-  displayItems(comptia_data);;
+  displayItems(comptia_data);
 });

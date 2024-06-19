@@ -2,49 +2,47 @@ function displayItems(items) {
   let allData = items.map(function (item) {
     console.log(item);
     return `
-            <div class="" >
-                <div class="bg-blue-light p-5 flex justify-between flex-col items-start mt-0 rounded-md">
-                    <div class="prose">
-                            <h2>${item.title}</h2>
-                            <p>
-                                <strong>Department:</strong> 
-                                ${item.department}
-                            </p>
-                            <p>
-                                <strong>Campus:</strong> 
-                                ${item.campus}
-                            </p>
-                            <p>
-                                <strong>Level:</strong> 
-                                ${item.level}
-                            </p>
-                            <p>
-                                <strong>Credit:</strong> 
-                                ${item.credit}
-                            </p>
-                            <p>
-                                <strong>Method:</strong> 
-                                ${item.method}
-                            </p>
-                            <p>
-                                <strong>Start Date:</strong> 
-                                ${item.start_Date}
-                            </p>
-                            <p>
-                                <strong>Duration:</strong> 
-                                ${item.duration}
-                            </p>
-                    </div>
-  
-                  <button class="md:mt-10 mt-5">
-                      <a href="${item.link}"
-                          class="z-50 hover:bg-transparent bg-blue-dark transition-all ease-in-out duration-200 inline-block rounded border border-blue-dark md:px-12 md:py-3 px-6 py-2 md:text-base text-white hover:text-blue-dark focus:outline-none focus:ring active:text-white">
-                          More Details
-                      </a>
-                  </button>
-              </div>
-            </div>
-              `;
+            <div class="bg-blue-light p-5 flex justify-between flex-col items-start mt-0 rounded-md">
+                <div class="prose">
+                    <h2>${item.title}</h2>
+                    <p>
+                        <strong>Department:</strong>
+                        ${item.department}
+                    </p>
+                    <p>
+                        <strong>Campus:</strong>
+                        ${item.campus}
+                    </p>
+                    <p>
+                        <strong>Level:</strong>
+                        ${item.level}
+                    </p>
+                    <p>
+                        <strong>Credit:</strong>
+                        ${item.credit}
+                    </p>
+                    <p>
+                        <strong>Method:</strong>
+                        ${item.method}
+                    </p>
+                    <p>
+                        <strong>Start Date:</strong>
+                        ${item.start_Date}
+                    </p>
+                    <p>
+                        <strong>Duration:</strong>
+                        ${item.duration}
+                    </p>
+                </div>
+
+                <button class="md:mt-10 mt-5">
+                    <a href="${item.link}"
+                        class="z-50 hover:bg-transparent bg-blue-dark transition-all ease-in-out duration-200 inline-block rounded border border-blue-dark md:px-12 md:py-3 px-6 py-2 md:text-base text-white hover:text-blue-dark focus:outline-none focus:ring active:text-white">
+                        More Details
+                    </a>
+                </button>
+        </div>
+        `;
   });
   allData = allData.join("");
   document.querySelector(".item").innerHTML = allData;
@@ -52,7 +50,7 @@ function displayItems(items) {
 
 function displayEvent(events) {
   let allData = events.map(function (event) {
-    return `<div class="group rounded-lg bg-gray-200 border-blue-dark border-2 md:border-4 pb-2 overflow-hidden ">
+    return `<div class="group rounded-lg bg-gray-200 z-0 border-blue-dark border-2 md:border-4 pb-2 overflow-hidden ">
                 <img alt="" 
                 src="
                     ../images/${event.image}
@@ -91,36 +89,37 @@ function displayPopUp(popups) {
             </div>
     `;
   });
-//   allData = allData.join("");
+  //   allData = allData.join("");
   document.querySelector(".popups").innerHTML = allData;
 }
 
 function displayHeader(headers) {
   let allData = headers.map(function (header) {
     return `
-                <div class="mx-auto max-w-screen-full container px-2 sm:px-2 lg:px-2 ">
+                <div class="mx-auto max-w-screen-full container px-2 sm:px-2 lg:px-2 z-50">
                 <div class="flex w-full h-16 items-center flex-row justify-between">
                     <div class="md:flex md:items-center md:gap-12">
-                        <a class="block text-white font-bold" 
+                        <a class="block relative text-white  font-bold " 
                         href="${header.home.link}">
                             <span class="sr-only">Home</span>
-                            ${header.logoImage}
+                            <h1 class="absolute -top-6 text-[1.3rem] md:text-xl">${header.logoImage}</h1>
+                            <span class=" absolute -top-0 left-0 text-sm text-bold md:text-md">Technology</span>
                         </a>
                     </div>
                     <div class="flex flex-row justify-between items-center">
                         <ul
-                            class="lg:opacity-100 opacity-0 flex lg:items-center lg:flex-row flex-col justify-center items-center gap-12 lg:gap-6 xl:gap-6 text-xl lg:text-sm xl:text-base text-white px-10  bg-blue-dark absolute lg:static lg:h-auto w-full h-screen left-0 top-[-400px] transition-all ease-in duration-1000 ">
+                            class="lg:opacity-100 lg:bg-inherit bg-blue-dark opacity-0 flex lg:items-center lg:flex-row flex-col justify-center items-center gap-12 lg:gap-6 xl:gap-6 text-xl lg:text-sm xl:text-base text-white px-10 absolute lg:static lg:h-auto w-full h-screen left-0 top-[-400px] transition-all ease-in duration-1000 ">
                             <!-- home -->
                             <li class="group relative" onmouseover="handleClick(event, 0)">
                                 <div class="lg:relative">
                                     <div class="flex flex-col lg:flex-row items-center justify-center">
                                         <!-- hover big screen -->
                                         <div
-                                            class="hidden lg:block item transition-all duration-1000 absolute w-full h-1 rounded-sm bg-blue-light top-10">
+                                            class="hidden  -z-50 lg:block item transition-all duration-1000 absolute w-full h-1 rounded-sm bg-blue-light top-10">
                                         </div>
                                         <!-- hover big small -->
                                         <div
-                                            class="lg:hidden item-small transition-all duration-1000 inline-block absolute w-full h-1 rounded-sm bg-blue-light top-10">
+                                            class="lg:hidden -z-50 item-small transition-all duration-1000 inline-block absolute w-full h-1 rounded-sm bg-blue-light top-10">
                                         </div>
                                     </div>
                                     <div class="inline-flex items-center overflow-hidden rounded-md ">
@@ -298,22 +297,52 @@ function displayHeader(headers) {
                                 </div>
                             </li>
                         </ul>
-
-
                     </div>
                     <!-- menu action -->
-                    <div class="flex items-center gap-3 mt-2 flex-row justify-center text-base font-poppins">
-                        <div class="block menu_bar text-base font-poppins mt-2">
+                    <div class="flex items-center gap-3 mt-2 flex-row justify-between md:w-0 w-[100%] md:justify-center text-base font-poppins">
+                        <div class="flex justify-end md:block text-base font-poppins mt-2 w-[50%] z-50">
                             <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
-                                <ion-icon name="search" onclick="Search()"
-                                    class="text-xl text-white cursor-pointer icon transition-all duration-150 ease-linear "></ion-icon>
+                                <ion-icon name="search"
+                                 onclick="searchOpen(this)"
+                                    class="text-xl text-white cursor-pointer transition-all duration-150 ease-linear ">
+                                </ion-icon>
                             </button>
                         </div>
-                        <div class="block lg:hidden menu_bar text-base font-poppins">
-                            <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
+                        <div class="flex justify-end  md:block lg:hidden menu_bar text-base font-poppins w-[50%]">
+                            <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75 z-50">
                                 <ion-icon name="menu" onclick="Menu(this)"
                                     class="text-xl text-white cursor-pointer icon transition-all duration-150 ease-linear "></ion-icon>
                             </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute searchs opacity-100 -top-[1100px] left-0 bg-white w-screen h-screen transition-all ease-in duration-300">
+                    <button  class="float-end md:pr-10 md:pt-5 pr-2 pt-2 rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
+                        <ion-icon name="close"
+                            onClick="searchClose(this)"
+                            class="icon-search text-3xl text-blue-dark   cursor-pointer transition-all duration-150 ease-linear ">
+                        </ion-icon>
+                    </button>
+                    <div class="h-full w-full">
+                        <div class="absolute md:w-[500px] w-full px-3 top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                            <div>
+                                <label for="Search" class="sr-only"> Search </label>
+
+                                <input
+                                    type="text"
+                                    id="Search"
+                                    placeholder="Search for..."
+                                    class="w-full placeholder:text-[1.2rem] placeholder:text-blue-dark rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm"
+                                />
+
+                                <span class=" absolute text-blue-dark inset-y-0 end-0 grid top-2 w-12 place-content-center right-4">
+                                    <button class="rounded bg-gray-100 text-blue-dark transition ">
+                                        <ion-icon name="search"
+                                            class=" text-xl cursor-pointer transition-all duration-150 ease-linear ">
+                                        </ion-icon>
+                                    </button>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -490,7 +519,7 @@ function displayFooter(footers) {
                                     </li>
                                     <li class="">
                                         <a 
-                                        href="${footer.allCourse.links.projectMan}"   
+                                        href="${footer.specialCourse.links.projectMan}"   
                                         class="relative w-full">
                                             <span
                                                 class=" hover:after:duration-500 hover:after:visible hover:after:w-[100%] after:inline-block after:invisible after:w-[0%] after:bg-blue-light after:h-[2px] after:rounded-sm after:absolute after:contents-[] after:bottom-0 after:left-0 after:top-8">
@@ -498,16 +527,6 @@ function displayFooter(footers) {
                                             </span>
                                         </a>
                                     </li>                                    
-                                    <li class="">
-                                        <a 
-                                        href="${footer.allCourse.links.webDev}"   
-                                        class="relative w-full">
-                                            <span
-                                                class=" hover:after:duration-500 hover:after:visible hover:after:w-[100%] after:inline-block after:invisible after:w-[0%] after:bg-blue-light after:h-[2px] after:rounded-sm after:absolute after:contents-[] after:bottom-0 after:left-0 after:top-8">
-                                                ${footer.specialCourse.webDev}
-                                            </span>
-                                        </a>
-                                    </li>
                                     <li class="">
                                         <a 
                                         href="${footer.specialCourse.links.leadership}"  
@@ -586,8 +605,8 @@ function displayFooter(footers) {
 }
 
 function displayCourse(courses) {
-    let allData = courses.map(function (course) {
-      return `<div class="group cursor-pointer rounded-lg bg-gray-200 border-blue-light border-2 md:border-4 pb-2 overflow-hidden">
+  let allData = courses.map(function (course) {
+    return `<div class="group cursor-pointer rounded-lg bg-gray-200 border-blue-light border-2 md:border-4 pb-2 overflow-hidden">
                   <img alt="" 
                   src="../images/${course.image} " 
                   class="h-52 transition  duration-500 group-hover:scale-105  w-full object-cover sm:h-40 lg:h-60" />
@@ -607,9 +626,16 @@ function displayCourse(courses) {
                   </div>
               </div>
                 `;
-    });
-    allData = allData.join("");
-    document.querySelector(".events").innerHTML = allData;
-  }
+  });
+  allData = allData.join("");
+  document.querySelector(".events").innerHTML = allData;
+}
 
-  export { displayItems, displayEvent, displayHeader, displayFooter, displayPopUp, displayCourse };
+export {
+  displayItems,
+  displayEvent,
+  displayHeader,
+  displayFooter,
+  displayPopUp,
+  displayCourse,
+};
