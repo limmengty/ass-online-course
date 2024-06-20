@@ -57,7 +57,7 @@ const header_data = [
       ourPartner: "Our Partner",
       contactUs: "Contact Us",
       links: {
-        home: "../ours/our_facilites.html",
+        home: "../contacts/about_us.html",
         ourFacilities: "../ours/our_facilites.html",
         ourPartner: "../errorPage/notfound.html",
         contactUs: "../contacts/contact_us.html",
