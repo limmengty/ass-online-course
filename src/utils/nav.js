@@ -10,33 +10,42 @@ const menu_obj = {
 function Menu(e) {
   let list = document.querySelector("ul");
   let icon = document.querySelector(".icon");
+  let popup = document.querySelector(".popup");
   console.log(list);
   e.name === "menu"
     ? ((e.name = "close"),
       list.classList.add(menu_obj.top),
       list.classList.add(menu_obj.opacity),
-      icon.classList.add(menu_obj.rotate))
+      icon.classList.add(menu_obj.rotate),
+      popup.classList.remove('z-50'),
+      popup.classList.add('-z-50'))
     : ((e.name = "menu"),
       list.classList.remove(menu_obj.top),
       list.classList.remove(menu_obj.opacity),
-      icon.classList.remove(menu_obj.rotate));
+      icon.classList.remove(menu_obj.rotate),
+      popup.classList.add('z-50')
+    );
 }
 
 function searchOpen(e) {
   let list = document.querySelector(".searchs");
-  let ul = document.querySelector("ul");
+  let popup = document.querySelector(".popup");
   list.classList.remove('-top-[1100px]')
   list.classList.add(menu_obj.top_0);
   list.classList.add(menu_obj.opacity);
-  list.classList.add('z-50')
-  console.log(list)
+  list.classList.add('z-50');
+  popup.classList.remove('z-50');
+  popup.classList.add('-z-50');
 }
 function searchClose(e) {
   let list = document.querySelector(".searchs");
+  let popup = document.querySelector(".popup");
   list.classList.remove(menu_obj.top_0);
   list.classList.add('-top-[1100px]')
   list.classList.remove(menu_obj.opacity);
   list.classList.remove('z-50')
+  popup.classList.add('z-50');
+
 }
 
 const handleClick = (e, index) => {
