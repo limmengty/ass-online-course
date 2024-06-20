@@ -20,7 +20,7 @@ const aws_data = [
     credit: "3.000",
     method: "Physical",
     start_Date: "2023/01/23, 2023/01/28",
-    duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm",
+    duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm)",
     link: "../errorPage/notfound.html",
   },
   {
@@ -42,7 +42,7 @@ const aws_data = [
     credit: "3.000",
     method: "Physical",
     start_Date: "2023/01/23",
-    duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm",
+    duration: "45hrs (Mon-Fri 6pm-8pm and Weekend 2pm-5pm)",
     link: "../errorPage/notfound.html",
   },
 ];

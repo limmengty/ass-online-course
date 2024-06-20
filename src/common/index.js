@@ -98,7 +98,7 @@ function displayHeader(headers) {
     return `
                 <div class="mx-auto max-w-screen-full container px-2 sm:px-2 lg:px-2 z-50">
                 <div class="flex w-full h-16 items-center flex-row justify-between">
-                    <div class="md:flex md:items-center md:gap-12">
+                    <div class="md:flex md:items-center md:gap-12 w-[50%]">
                         <a class="block relative text-white  font-bold " 
                         href="${header.home.link}">
                             <span class="sr-only">Home</span>
@@ -300,7 +300,7 @@ function displayHeader(headers) {
                     </div>
                     <!-- menu action -->
                     <div class="flex items-center gap-3 mt-2 flex-row justify-between md:w-0 w-[100%] md:justify-center text-base font-poppins">
-                        <div class="flex justify-end md:block text-base font-poppins mt-2 w-[50%] z-50">
+                        <div class="flex justify-center md:block text-base font-poppins mt-2 w-[50%] z-50">
                             <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
                                 <ion-icon name="search"
                                  onclick="searchOpen(this)"
