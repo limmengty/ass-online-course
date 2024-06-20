@@ -14,7 +14,7 @@ const allcourse_data = [
   {
     image: "../../images/CompTIA.jpg",
     department: "CompTIA Academy",
-    link: "./courses/comp_tia.html",
+    link: "../courses/comp_tia.html",
   },
   {
     image: "../../images/web.jpg",

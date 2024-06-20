@@ -1438,6 +1438,58 @@ html{
   top: 60px;
 }
 
+.-top-\[1500px\]{
+  top: -1500px;
+}
+
+.left-\[0\%\]{
+  left: 0%;
+}
+
+.-left-\[0\%\]{
+  left: -0%;
+}
+
+.-left-\[50\%\]{
+  left: -50%;
+}
+
+.left-\[30\%\]{
+  left: 30%;
+}
+
+.left-\[10\%\]{
+  left: 10%;
+}
+
+.left-\[15\%\]{
+  left: 15%;
+}
+
+.left-\[12\%\]{
+  left: 12%;
+}
+
+.left-\[13\%\]{
+  left: 13%;
+}
+
+.left-\[14\%\]{
+  left: 14%;
+}
+
+.left-\[1\%\]{
+  left: 1%;
+}
+
+.left-\[16\%\]{
+  left: 16%;
+}
+
+.left-\[\]{
+  left: ;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -1658,6 +1710,10 @@ html{
   width: 100vw;
 }
 
+.w-\[80\%\]{
+  width: 80%;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -1686,6 +1742,31 @@ html{
 
 .-translate-y-\[50\%\]{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[0\%\]{
+  --tw-translate-x: -0%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[15\%\]{
+  --tw-translate-x: -15%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[14\%\]{
+  --tw-translate-x: -14%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[1\%\]{
+  --tw-translate-x: -1%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[16\%\]{
+  --tw-translate-x: -16%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2233,6 +2314,10 @@ html{
   transition-duration: 500ms;
 }
 
+.duration-700{
+  transition-duration: 700ms;
+}
+
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2444,6 +2529,16 @@ html{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.prose-p\:text-blue-dark :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  --tw-text-opacity: 1;
+  color: rgb(39 76 119 / var(--tw-text-opacity));
+}
+
+.hover\:border-blue-dark:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(39 76 119 / var(--tw-border-opacity));
+}
+
 .hover\:bg-blue-dark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(39 76 119 / var(--tw-bg-opacity));
@@ -2461,6 +2556,10 @@ html{
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:font-bold:hover{
+  font-weight: 700;
 }
 
 .hover\:text-blue-dark:hover{
@@ -2586,6 +2685,10 @@ html{
     position: relative;
   }
 
+  .md\:left-\[16\%\]{
+    left: 16%;
+  }
+
   .md\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -2641,6 +2744,11 @@ html{
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:-translate-x-\[16\%\]{
+    --tw-translate-x: -16%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-2{
@@ -2752,6 +2860,10 @@ html{
     position: relative;
   }
 
+  .lg\:left-\[16\%\]{
+    left: 16%;
+  }
+
   .lg\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -2791,6 +2903,11 @@ html{
 
   .lg\:h-auto{
     height: auto;
+  }
+
+  .lg\:-translate-x-\[16\%\]{
+    --tw-translate-x: -16%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-2{

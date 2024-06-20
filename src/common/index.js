@@ -299,8 +299,8 @@ function displayHeader(headers) {
                         </ul>
                     </div>
                     <!-- menu action -->
-                    <div class="flex items-center gap-3 mt-2 flex-row justify-between md:w-auto w-[100%] md:justify-center text-base font-poppins">
-                        <div class="flex justify-center lg:block text-base font-poppins mt-1 w-[50%] md:w-auto z-50">
+                    <div class="flex items-center gap-3 mt-2 flex-row justify-between md:justify-center text-base font-poppins">
+                        <div class="flex justify-center lg:block text-base font-poppins mt-1 md:w-auto z-50">
                             <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
                                 <ion-icon name="search"
                                  onclick="searchOpen(this)"
@@ -308,7 +308,7 @@ function displayHeader(headers) {
                                 </ion-icon>
                             </button>
                         </div>
-                        <div class="flex justify-end  md:block lg:hidden menu_bar text-base font-poppins w-[50%]">
+                        <div class="flex justify-end  md:block lg:hidden menu_bar text-base font-poppins">
                             <button class="rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75 z-50">
                                 <ion-icon name="menu" onclick="Menu(this)"
                                     class="text-xl text-white cursor-pointer icon transition-all duration-150 ease-linear "></ion-icon>
@@ -316,7 +316,7 @@ function displayHeader(headers) {
                         </div>
                     </div>
                 </div>
-                <div class="absolute searchs opacity-100 -top-[1100px] left-0 bg-white w-screen h-screen transition-all ease-in duration-300">
+                <div class="absolute searchs opacity-100 -top-[1500px] left-0 bg-white w-screen h-screen transition-all ease-in duration-700">
                     <button  class="float-end md:pr-10 md:pt-5 pr-2 pt-2 rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75">
                         <ion-icon name="close"
                             onClick="searchClose(this)"
@@ -606,7 +606,7 @@ function displayFooter(footers) {
 
 function displayCourse(courses) {
   let allData = courses.map(function (course) {
-    return `<div class="group cursor-pointer rounded-lg bg-gray-200 border-blue-light border-2 md:border-4 pb-2 overflow-hidden">
+    return `<div class="group cursor-pointer rounded-lg bg-gray-200 border-blue-dark border-2 md:border-4 pb-2 overflow-hidden">
                   <img alt="" 
                   src="../images/${course.image} " 
                   class="h-52 transition  duration-500 group-hover:scale-105  w-full object-cover sm:h-40 lg:h-60" />
@@ -619,7 +619,7 @@ function displayCourse(courses) {
       
                       <button class="md:mt-5 mt-2">
                           <a href="${course.link}"
-                              class="z-50 hover:bg-blue-light bg-transparent transition-all ease-in-out duration-200 inline-block rounded border border-blue-light md:px-8 md:py-2 px-6 py-2 md:text-base text-blue-dark hover:text-white focus:outline-none focus:ring active:text-blue-dark">
+                              class="z-50 hover:bg-blue-dark bg-transparent transition-all ease-in-out duration-200 inline-block rounded border border-blue-dark md:px-8 md:py-2 px-6 py-2 md:text-base text-blue-dark hover:text-white focus:outline-none focus:ring active:text-blue-dark">
                               Read More
                           </a>
                       </button>

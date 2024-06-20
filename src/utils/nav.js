@@ -30,7 +30,7 @@ function Menu(e) {
 function searchOpen(e) {
   let list = document.querySelector(".searchs");
   let popup = document.querySelector(".popup");
-  list.classList.remove('-top-[1100px]')
+  list.classList.remove('-top-[1500px]')
   list.classList.add(menu_obj.top_0);
   list.classList.add(menu_obj.opacity);
   list.classList.add('z-50');
@@ -41,7 +41,7 @@ function searchClose(e) {
   let list = document.querySelector(".searchs");
   let popup = document.querySelector(".popup");
   list.classList.remove(menu_obj.top_0);
-  list.classList.add('-top-[1100px]')
+  list.classList.add('-top-[1500px]')
   list.classList.remove(menu_obj.opacity);
   list.classList.remove('z-50')
   popup.classList.add('z-50');
