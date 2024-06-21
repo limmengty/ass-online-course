@@ -24,7 +24,7 @@ const allcourse_data = [
   {
     image: "../../images/aws.jpg",
     department: "Data Science Academy",
-    link: "../courses/web.html",
+    link: "../courses/da.html",
   },
   {
     image: "../../images/video graphic.jpg",
